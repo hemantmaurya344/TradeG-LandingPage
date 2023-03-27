@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Quicksand:wght@600&family=Roboto:wght@400;500&display=swap');
+
+:root{
+    /* font-family */
+    --ffprimary : 'Poppins', sans-serif;
+    --ffsecondary :  'Roboto', sans-serif;
+    --ffnavbar : 'Quicksand', sans-serif;
+
+    /* colors */
+    --green : hsl(126, 96%, 33%);
+    --lightblue : hsl(205, 90%, 51%);
+    --purple : hsl(284, 44%, 27%);
+
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: hsl(55, 100%, 93%);
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  /* 
+    10. Removing list styles 
+  */
+  li,ul,ol{
+    list-style: none;
+  }
+
+
+.navbar{
+    height: 2em;
+    background-color: #3b3a3a;
+    font-family: var(--ffnavbar);
+    font-size: 0.8rem;
+    color: #fff;
+    letter-spacing: 0.07em;
+}
+.navbar > ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 0.3em;
+    margin-left: 6em;
+    margin-right: 6em;
+}
+.header{
+    display: flex;
+}
+
+.header > img{
+    position: relative;
+    top: 2em;
+    left: 14em;
+}
+.header > i{
+    opacity: 80%;
+    z-index: 1;
+    position: relative;
+    top: 3em;
+    left: 26em;
+}
+.header > input{
+    position: relative;
+    top: 2.8em;
+    left: 27em;
+    height: 2.2em;
+    width: 25em;
+    border: none;
+    border-bottom: 0.1em solid rgba(128, 128, 128, 0.356);
+    border-radius: 0.3em;
+    padding-left: 2.4em;
+    font-family: var(--ffsecondary);
+    font-size: 0.9rem;
+    letter-spacing: 0.01em;
+}
+.header > button{
+    position: relative;
+    top: 2em;
+    left: 33em;
+    height: 2.5em;
+    width: 8.6em;
+    border: none;
+    padding: 0.5em 0.8em 0.5em 0.8em;
+    background-color: var(--green);
+    border-radius: 0.3em;
+    box-shadow: 1px 2px 10px grey;
+    color: #fff;
+    font-family: var(--ffsecondary);
+    font-size: 1rem;
+}
