@@ -1,4 +1,4 @@
 # TradeG-LandingPage
 
 
-               https://tradeg-landingpage.netlify.app
+https://tradeg-landingpage.netlify.app
