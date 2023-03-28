@@ -12,47 +12,73 @@
     <section>
         <nav class="navbar">
             <ul>
-                <li>HOME</li>
-                <li>STOCK MARKET COURSES</li>
-                <li>SCREEMERS</li>
-                <li>ANALYSIS TOOLS</li>
-                <li>TRADING TOOLS</li>
-                <li>KNOWLEDGE BASE</li>
-                <li>JOB ORIENDTED COURSES (PRARAMBH)</li>
+                <li class="nav-menu">HOME</li>
+                <li class="nav-menu">STOCK MARKET COURSES</li>
+                <li class="nav-menu">SCREEMERS</li>
+                <li class="nav-menu" onclick="showddMenu()">ANALYSIS TOOLS</li>
+                <li class="nav-menu">TRADING TOOLS</li>
+                <li class="nav-menu">KNOWLEDGE BASE</li>
+                <li class="nav-menu">JOB ORIENDTED COURSES (PRARAMBH)</li>
             </ul>
         </nav>
+            <div class="dropdown-menu">
+                <ul class="for-Analysis" id="dp-menu">
+                    <li class="dd-menu">NIFTY OPTION CHAIN</li>
+                    <li class="dd-menu">FOREX COPY TRADING</li>
+                    <li class="dd-menu">FOREX HEAT MAP</li>
+                    <li class="dd-menu">NIFTY OI</li>
+                    <li class="dd-menu">LIVE OHLC</li>
+                    <li class="dd-menu">FOREX MARKET SENTIMENT</li>
+                    <li class="dd-menu">BANK NIFTY OPTION CHAIN</li>
+                    <li class="dd-menu">SECTOR WISE MARKET</li>
+                    <li class="dd-menu">FOREX TECHNICAL SIGNALS</li>
+                    <li class="dd-menu">BANKNIFTY OI</li>
+                    <li class="dd-menu">ECONOMIC CALENDER</li>
+                </ul>
+            </div>
+        
     </section>
 
     <section>
         <div class="header">
             <img src="/res/Logo.png" alt="tradeG-logo">
-            <i class="fa-solid fa-magnifying-glass"></i>            
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>            
             <input type="search" name="search" id="" value="" placeholder="Search for investment , trading & analysis">
             <button>Log In / Sign up</button>
         </div>
     </section>
 
-    <!-- <section>
+    <section>
         <div class="intro-text-section">
             <div class="intro-text">
-                <h3>Up Your Financial Skills Advance Your To  Career Path</h3>
-                <p>Learn Stock Market Trading from N.I.S.M & CFA Certified Financial experts,
+                <h3>Up Your <span class="green-letter">Financial Skills</span> <br> To  
+                    <span class="green-letter">Advance</span> Your <br>
+                    <span class="green-letter">Career</span> Path</h3>
+                <p>Learn Stock Market Trading from N.I.S.M & CFA Certified Financial experts. <br>
                     Download Tradeg learning app today.</p>
             </div>
             <div class="intro-button">
-                <button>Get Started</button>
-                <button>Free trail</button>
+                <button class="start-btn">Get Started</button>
+                <button class="trail-btn">Free trail</button>
             </div>
             <div class="intro-promo">
-                <h4>Interactive sessions</h4>
-                <i class="fa-solid fa-graduation-cap" style="color: #f38265;"></i>
-                <h4>Career-Oriented</h4>
-                <h4>Creative Thinking</h4>
+                <li><i class="fa-regular fa-comments" style="color: #fcb237;"></i></li>
+                <li>Interactive sessions</li>
+                <li><i class="fa-solid fa-graduation-cap" style="color: #f38265;"></i></li>
+                <li>Career-Oriented</li>
+                <li><i class="fa-solid fa-gauge" style="color: #bc7078;"></i></i></li>
+                <li>Creative Thinking</li>               
             </div>
         </div>
         <div class="photo-section">
 
         </div>
-    </section> -->
+    </section>
+
+    <script>
+        function showddMenu(){
+            document.getElementById('dp-menu').classList.toggle("show-dd");
+        }     
+    </script>
 </body>
 </html>
