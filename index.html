@@ -9,9 +9,11 @@
     <title>TradeG</title>
 </head>
 <body>
+    <!-- section for navbar -->
     <section>
         <nav class="navbar">
-            <ul>
+            <ul >
+                <!-- navbar menu starts here -->
                 <li class="nav-menu">HOME</li>
                 <li class="nav-menu">STOCK MARKET COURSES</li>
                 <li class="nav-menu">SCREEMERS</li>
@@ -21,6 +23,7 @@
                 <li class="nav-menu">JOB ORIENDTED COURSES (PRARAMBH)</li>
             </ul>
         </nav>
+        <!-- menus dropdown options -->
             <div class="dropdown-menu">
                 <ul class="for-Analysis" id="dp-menu">
                     <li class="dd-menu">NIFTY OPTION CHAIN</li>
@@ -36,18 +39,22 @@
                     <li class="dd-menu">ECONOMIC CALENDER</li>
                 </ul>
             </div>
-        
     </section>
 
+    <!-- main header section -->
     <section>
-        <div class="header">
+        <div class="header" id="head-nav">
+            <!-- logo -->
             <img src="/res/Logo.png" alt="tradeG-logo">
+            <!-- search box content -->
             <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>            
             <input type="search" name="search" id="" value="" placeholder="Search for investment , trading & analysis">
+            <!-- button -->
             <button>Log In / Sign up</button>
         </div>
     </section>
 
+    <!-- intro section -->
     <section>
         <div class="intro-text-section">
             <div class="intro-text">
@@ -70,13 +77,34 @@
                 <li>Creative Thinking</li>               
             </div>
         </div>
+        <!-- intro image section -->
         <div class="photo-section">
-
+            <div class="last-box"></div>
+            <div class="top-box">
+                <div class="img-box">
+                    <img src="/Res/img.png" alt="women-advertising-image">
+                </div>
+            </div>
+            <div class="small-box-1">
+                <h3>25+ N.I.S.M & CFA</h3>
+                <p>Certified experts</p>
+            </div>
+            <div class="small-box-2">
+                <h3>20+ Courses</h3>
+                <p>MultipleCategories</p>
+            </div>
+            <div class="small-box-3">
+                <img src="/Res/img2.png" alt="">
+                <p>Dedicated students per day</p>
+            </div>
+           
         </div>
     </section>
 
+    <!-- js for working of dropdown menu in navbar section -->
     <script>
         function showddMenu(){
+            document.getElementById('head-nav').classList.toggle("hide");
             document.getElementById('dp-menu').classList.toggle("show-dd");
         }     
     </script>
