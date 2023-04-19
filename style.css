@@ -10,7 +10,7 @@
     --lightblue : hsl(205, 90%, 51%);
     --purple : hsl(284, 44%, 27%);
     --fheading : hsl(220, 43%, 11%);
-    --grey : hsl(0, 0%, 55%);
+    --grey : hsl(0, 0%, 47%);
 }
 
 /*
@@ -180,7 +180,7 @@
   color: var(--green);
 }
 .intro-text > p{
-  position: fixed;
+  position: absolute;
   font-family: var(--ffsecondary);
   color: var(--grey);
   top: 26.5em;
@@ -189,7 +189,7 @@
 }
 .start-btn{
   font-family: var(--ffsecondary);
-  position: fixed;
+  position: absolute;
   top: 28em;
   left: 6em;
   height: 2.5em;
@@ -202,7 +202,7 @@
 }
 .trail-btn{
   font-family: var(--ffsecondary);
-  position: fixed;
+  position: absolute;
   top: 28em;
   left: 15em;
   height: 2.5em;
@@ -218,7 +218,7 @@
   display: flex;
   color: var(--grey);
   font-family: var(--ffsecondary);
-  position: fixed;
+  position: absolute;
   top: 32em;
   left: 5em;
 }
@@ -231,7 +231,7 @@
     height: 20em;
     width: 20em;
     background-color: hsl(44, 100%, 90%);
-    position: fixed;
+    position: absolute;
     left: 55em;
     top: 12em;
     border-radius: 2em;
@@ -239,10 +239,10 @@
     z-index: -2;
 }
 .top-box{
-  height: 20em;
+    height: 20em;
     width: 20em;
     background-color: hsl(12, 64%, 91%);
-    position: fixed;
+    position: absolute;
     left: 55em;
     top: 12em;
     border-radius: 2em;
@@ -250,7 +250,7 @@
     z-index: -1;
 }
 .img-box > img{
-    position: fixed;
+    position: absolute;
     transform: rotate(-8deg);
     top: 1.1em;
     left: -1em;
@@ -260,7 +260,7 @@
   height: 4em;
   width: 10em;
   background-color: #fff;
-  position: fixed;
+  position: absolute;
   top: 13em;
   left: 50em;
   text-align: center;
@@ -282,7 +282,7 @@
   height: 4em;
   width: 7em;
   background-color: #fff;
-  position: fixed;
+  position: absolute;
   top: 18em;
   left: 71em;
   text-align: center;
@@ -304,7 +304,7 @@
   height: 5em;
   width: 10em;
   background-color: #fff;
-  position: fixed;
+  position: absolute;
   top: 29em;
   left: 61.6em;
   text-align: center;
@@ -321,4 +321,62 @@
   font-size: 0.6em;
   color: var(--grey);
   font-family: var(--ffsecondary);
+}
+.welcome-image > img{
+  position: absolute;
+  top: 40em;
+  left: 10em;
+  height: 30em;
+  width: 30em;
+}
+.welcome-sidePannel{
+  position: absolute;
+  top: 43em;
+  left: 48em;
+  margin-right: 5em;
+  font-family: var(--ffprimary);
+}
+.bottomLine{
+  height: 0.3em;
+  width: 5.5em;
+  margin: 0.5em 0 1.5em 0;
+  background-color: var(--green);
+  border-radius: 0.2em;
+}
+.welcome-sidePannel > p{
+  font-size: 0.9em;
+  color: var(--grey);
+}
+.welcome-sidePannel > button{
+  background-color: var(--green);
+  border: none;
+  border-radius: 0.1em;
+  margin-top: 1.5em;
+  height: 2.7em;
+  width: 14em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 500;
+  padding: 0.5em;
+}
+.panel-2{
+  position: absolute;
+  top: 75em;
+  left: 8em;
+  font-family: var(--ffprimary);
+  width: 35em;
+}
+.panel-2 > p{
+  font-size: 0.8em;
+}
+.panel2-img{
+
+}
+.bottomLine{
+  height: 0.3em;
+  width: 5.5em;
+  margin: 0.5em 0 1.5em 0;
+  background-color: var(--green);
+  border-radius: 0.2em;
 }
